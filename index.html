@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strings</title>
+</head>
+<body>
+  <form onsubmit="return false">
+    <input type="text" pattern="[A-Za-z]+" onkeypress="var e=window.event || e;var keyunicode=e.charCode || e.keyCode;return (keyunicode>=65 && keyunicode<=122 || keyunicode==8 || keyunicode==32)? true : false" id="words">
+    <button id="button" type="submit">touch me</button>
+  </form>
+  <div id="placement"></div>
+  <div id="placement2"></div>
+  <div id="placement3"></div>
+  <script src="strings.js"></script>
+</body>
+</html>
